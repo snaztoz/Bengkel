@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 /**
  * Navbar yang terletak di sisi bawah layar.
  */
-public class BottomNavbarFragment extends Fragment {
+public class HomeBottomNavbarFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,7 +22,7 @@ public class BottomNavbarFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public BottomNavbarFragment() {
+    public HomeBottomNavbarFragment() {
         // Required empty public constructor
     }
 
@@ -32,11 +32,11 @@ public class BottomNavbarFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment BottomNavbarFragment.
+     * @return A new instance of fragment HomeBottomNavbarFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static BottomNavbarFragment newInstance(String param1, String param2) {
-        BottomNavbarFragment fragment = new BottomNavbarFragment();
+    public static HomeBottomNavbarFragment newInstance(String param1, String param2) {
+        HomeBottomNavbarFragment fragment = new HomeBottomNavbarFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
