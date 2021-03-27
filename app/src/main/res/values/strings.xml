@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Bengkel</string>
+    <string name="app_temp_string">Temp</string>
 </resources>
