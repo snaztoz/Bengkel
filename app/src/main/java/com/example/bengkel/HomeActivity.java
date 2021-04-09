@@ -9,6 +9,12 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // menyembunyikan title bar
+        try {
+            this.getSupportActionBar().hide();
+        } catch (NullPointerException exc) {}
+
         setContentView(R.layout.activity_home);
     }
 }
