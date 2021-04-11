@@ -7,54 +7,49 @@
     tools:context=".HomeBottomNavbarFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
         android:background="@drawable/fragment_bottom_navbar_bg"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_height="0dp"
             android:text="@string/app_temp_string"
-            app:layout_constraintDimensionRatio="1"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
             app:layout_constraintEnd_toStartOf="@+id/button4"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button4"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_height="0dp"
             android:text="@string/app_temp_string"
-            app:layout_constraintDimensionRatio="1"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toStartOf="@+id/button6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/app_temp_string"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.517" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/app_temp_string"
-            app:backgroundTint="@color/apptheme_green"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="1"
-            app:layout_constraintEnd_toStartOf="@+id/button3"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.517" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
