@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bengkel">
-        <activity android:name=".BengkelListActivity" android:parentActivityName=".HomeActivity">
+        <activity android:name=".BengkelDetailActivity"></activity>
+        <activity
+            android:name=".BengkelListActivity"
+            android:parentActivityName=".HomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".HomeActivity" />
@@ -17,6 +20,7 @@
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
