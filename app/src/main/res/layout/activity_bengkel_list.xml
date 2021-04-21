@@ -39,6 +39,7 @@
         android:layout_marginRight="8dp"
         android:background="@color/apptheme_gray_3"
         android:queryHint="Search near your location"
+        android:iconifiedByDefault="false"
         app:layout_constraintEnd_toStartOf="@+id/button7"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/bengkelListTitle" />
