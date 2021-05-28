@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Bengkel</string>
     <string name="app_temp_string">Temp</string>
-    <string name="app_unable_to_contact_mechanic"><u>I can't even call the mechanic!</u></string>
+    <string name="app_unable_to_contact_mechanic"><u>I can\'t even call the mechanic!</u></string>
 </resources>
