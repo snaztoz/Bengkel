@@ -24,23 +24,25 @@
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="1"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+            app:layout_constraintEnd_toStartOf="@+id/buttonAdd"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/navbar_button_user" />
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/buttonAdd"
+            android:background="@android:color/transparent"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="@+id/buttonUser"
             app:layout_constraintDimensionRatio="1"
             app:layout_constraintEnd_toStartOf="@+id/imageButton8"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/buttonUser"
             app:layout_constraintTop_toTopOf="@+id/buttonUser"
-            tools:src="@tools:sample/backgrounds/scenic" />
+            tools:src="@drawable/navbar_button_add" />
 
         <ImageButton
             android:id="@+id/imageButton8"
@@ -50,7 +52,7 @@
             app:layout_constraintDimensionRatio="1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageButton7"
+            app:layout_constraintStart_toEndOf="@+id/buttonAdd"
             app:layout_constraintTop_toTopOf="@+id/buttonUser"
             tools:src="@tools:sample/backgrounds/scenic" />
 
