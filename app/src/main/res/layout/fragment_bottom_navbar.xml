@@ -28,7 +28,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/navbar_button_user" />
+            app:srcCompat="@drawable/navbar_button_user" />
 
         <ImageButton
             android:id="@+id/buttonAdd"
@@ -42,7 +42,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/buttonUser"
             app:layout_constraintTop_toTopOf="@+id/buttonUser"
-            tools:src="@drawable/navbar_button_add" />
+            app:srcCompat="@drawable/navbar_button_add" />
 
         <ImageButton
             android:id="@+id/buttonSetting"
@@ -57,7 +57,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/buttonAdd"
             app:layout_constraintTop_toTopOf="@+id/buttonUser"
-            tools:src="@drawable/navbar_button_setting" />
+            app:srcCompat="@drawable/navbar_button_setting" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
