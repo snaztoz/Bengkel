@@ -17,20 +17,26 @@
 
         <ImageButton
             android:id="@+id/imageButton6"
+            android:background="@android:color/transparent"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:padding="20dp"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="1"
             app:layout_constraintEnd_toStartOf="@+id/imageButton7"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/backgrounds/scenic" />
+            app:srcCompat="@drawable/navbar_button_user" />
 
         <ImageButton
             android:id="@+id/imageButton7"
+            android:background="@android:color/transparent"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:padding="20dp"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
             app:layout_constraintDimensionRatio="1"
             app:layout_constraintEnd_toStartOf="@+id/imageButton8"
@@ -38,7 +44,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton6"
             app:layout_constraintTop_toTopOf="@+id/imageButton6"
             app:layout_constraintVertical_bias="1.0"
-            tools:src="@tools:sample/backgrounds/scenic" />
+            app:srcCompat="@drawable/navbar_button_setting" />
 
         <ImageButton
             android:id="@+id/imageButton8"
