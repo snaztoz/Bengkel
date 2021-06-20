@@ -13,4 +13,10 @@
     <color name="apptheme_gray">#454545</color>
     <color name="apptheme_gray_2">#939393</color>
     <color name="apptheme_gray_3">#3F4047</color>
+    <color name="apptheme_gray_4">#B5B5B5</color>
+
+    <!--    syahrul-->
+    <color name="inp">#313345</color>
+    <color name="inp_text">#808080</color>
+    <color name="button">#0AAA00</color>
 </resources>

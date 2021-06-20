@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "994201168220",
+    "project_id": "bengkel-ac9c7",
+    "storage_bucket": "bengkel-ac9c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994201168220:android:2d5b4bede39f784721f999",
+        "android_client_info": {
+          "package_name": "com.example.bengkel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994201168220-s7kmkbcd9nu6pakbv55322q6k1cipo8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0URidc0rVYW-O9hI1Ab7--cC9gKPno1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994201168220-s7kmkbcd9nu6pakbv55322q6k1cipo8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
