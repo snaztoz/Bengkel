@@ -13,8 +13,8 @@ import com.example.bengkel.bengkellist.BengkelListAdapter;
 
 public class BengkelListActivity extends AppCompatActivity {
     private GridView bengkelListContainer;
-    private int[] images = {R.drawable.navbar_button_add, R.drawable.navbar_button_add,
-                            R.drawable.navbar_button_add, R.drawable.navbar_button_add, };
+    private int[] images = {R.drawable.navbar_button_history, R.drawable.navbar_button_history,
+                            R.drawable.navbar_button_history, R.drawable.navbar_button_history, };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
