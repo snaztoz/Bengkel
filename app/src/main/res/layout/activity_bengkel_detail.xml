@@ -116,6 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:background="@drawable/bengkel_detail_action_button_bg"
+            android:onClick="handleCallClick"
             android:text="Button"
             app:backgroundTint="@color/apptheme_green_2"
             app:layout_constraintEnd_toStartOf="@+id/guideline20"

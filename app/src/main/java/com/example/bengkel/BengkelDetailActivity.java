@@ -3,7 +3,9 @@ package com.example.bengkel;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class BengkelDetailActivity extends AppCompatActivity {
@@ -22,5 +24,13 @@ public class BengkelDetailActivity extends AppCompatActivity {
 
         namaPlaceholder.setText(namaBengkel);
         alamatPlaceholder.setText(alamatBengkel);
+    }
+
+    public void handleCallClick(View view) {
+        // nomornya Ghoza :D
+        String url = "https://api.whatsapp.com/send?phone=6281554085636";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 }
