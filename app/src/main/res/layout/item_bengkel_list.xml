@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline15">
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/nama_bengkel"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:autoSizeTextType="uniform"

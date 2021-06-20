@@ -6,23 +6,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.bengkel.BengkelListActivity;
+
+import java.util.List;
 
 public class BengkelListAdapter extends BaseAdapter {
     private final Context context;
-    private final int[] images;
+    private final List<BengkelListActivity.Data> dataList;
+    private final int image;
     private int templateLayoutId;
-    private int templateId;
+    private int templateImageId;
+    private int templateNameId;
     private final LayoutInflater inflater;
 
-    public BengkelListAdapter(Context appContext, int[] images) {
+    public BengkelListAdapter(Context appContext, List<BengkelListActivity.Data> dataList, int image) {
         this.context = appContext;
-        this.images = images;
+        this.dataList = dataList;
+        this.image = image;
         this.inflater = LayoutInflater.from(this.context);
     }
 
     @Override
     public int getCount() {
-        return images.length;
+        return dataList.size();
     }
 
     @Override
@@ -37,9 +45,15 @@ public class BengkelListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
+        System.out.println("memproses view");
         view = inflater.inflate(templateLayoutId, null);
-        ImageView image = (ImageView) view.findViewById(templateId);
-        image.setImageResource(images[i]); // set logo images
+
+        ImageView imageView = (ImageView) view.findViewById(templateImageId);
+        imageView.setImageResource(image); // set logo images
+
+        TextView text = (TextView) view.findViewById(templateNameId);
+        text.setText(dataList.get(i).nama);
+
         return view;
     }
 
@@ -47,7 +61,11 @@ public class BengkelListAdapter extends BaseAdapter {
         this.templateLayoutId = id;
     }
 
-    public void setTemplateId(int id) {
-        this.templateId = id;
+    public void setTemplateImageId(int id) {
+        this.templateImageId = id;
+    }
+
+    public void setTemplateNameId(int id) {
+        this.templateNameId = id;
     }
 }
