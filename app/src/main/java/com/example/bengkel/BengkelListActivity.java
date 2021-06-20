@@ -31,6 +31,9 @@ public class BengkelListActivity extends AppCompatActivity {
         public double jarak;
     }
 
+    public static final String NAMA_BENGKEL = "com.example.bengkel.NAMA_BENGKEL";
+    public static final String ALAMAT_BENGKEL = "com.example.bengkel.ALAMAT_BENGKEL";
+
     private GridView bengkelListContainer;
     private int image = R.drawable.navbar_button_history;
     private List<Data> dataList = new ArrayList<Data>();
@@ -101,6 +104,8 @@ public class BengkelListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(BengkelListActivity.this, BengkelDetailActivity.class);
+                intent.putExtra(NAMA_BENGKEL, dataList.get(position).nama);
+                intent.putExtra(ALAMAT_BENGKEL, dataList.get(position).alamat);
                 startActivity(intent);
             }
         });
