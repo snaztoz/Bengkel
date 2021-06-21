@@ -51,8 +51,12 @@ public class BengkelListAdapter extends BaseAdapter {
         ImageView imageView = (ImageView) view.findViewById(templateImageId);
         imageView.setImageResource(image); // set logo images
 
-        TextView text = (TextView) view.findViewById(templateNameId);
-        text.setText(dataList.get(i).nama);
+        TextView textView = (TextView) view.findViewById(templateNameId);
+        String text = dataList.get(i).nama;
+        if (text.length() > 12) {
+            text = text.substring(0, 11) + "...";
+        }
+        textView.setText(text);
 
         return view;
     }
